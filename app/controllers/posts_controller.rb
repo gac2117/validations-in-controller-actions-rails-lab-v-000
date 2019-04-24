@@ -12,7 +12,7 @@ class PostsController < ApplicationController
     if @post.valid?
       @post.save
     else
-      render :edit 
+      render :edit
     redirect_to post_path(@post)
   end
 
